@@ -1,6 +1,6 @@
 # hi
 
-def score_word(word):
+def word_score(word):
     letterPoints = {
     "a":  1,
     "b":  3,
@@ -34,7 +34,23 @@ def score_word(word):
     for letter in word:
         word_total += letterPoints[letter]
 
-    print(word_total)
+    return word_total
     
+def find_highest_score(text):
+    max_word = ""
+    max_score = 0
+    for word in text:
+        if word_score(word) >= max_score:
+            max_word = word
+    return max_score, max_word
 
-score_word("salutations")
+text_file_name = input("Enter a file name to find the highest scoring word: ")
+
+with open(text_file_name, "r") as fh:
+    all_words = []
+    fh.close()
+
+
+
+
+
