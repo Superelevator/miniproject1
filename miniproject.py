@@ -42,13 +42,18 @@ def find_highest_score(text):
     for word in text:
         if word_score(word) >= max_score:
             max_word = word
+            max_score = word_score(word)
     return max_score, max_word
 
 text_file_name = input("Enter a file name to find the highest scoring word: ")
 
 with open(text_file_name, "r") as fh:
-    all_words = []
+    content = fh.read()
+    all_words = content.split()
+    
     fh.close()
+
+print(find_highest_score(all_words))
 
 
 
