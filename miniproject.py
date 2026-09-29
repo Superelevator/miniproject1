@@ -27,8 +27,10 @@ def word_score(word):
     "w":  4,
     "x":  8,
     "y":  4,
-    "z": 10,
+    "z": 10
 }
+
+    word = word.lower()
 
     word_total = 0
     for letter in word:
@@ -45,15 +47,16 @@ def find_highest_score(text):
             max_score = word_score(word)
     return max_score, max_word
 
-text_file_name = input("Enter a file name to find the highest scoring word: ")
+while True:
+    text_file_name = input("Enter a file name to find the highest scoring word: ")
 
-with open(text_file_name, "r") as fh:
-    content = fh.read()
-    all_words = content.split()
-    
-    fh.close()
+    with open(text_file_name, "r") as fh:
+        content = fh.read()
+        all_words = content.split()
+        
+        fh.close()
 
-print(find_highest_score(all_words))
+    print(find_highest_score(all_words))
 
 
 
