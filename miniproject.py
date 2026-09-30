@@ -53,8 +53,6 @@ while True:
     with open(text_file_name, "r") as fh:
         content = fh.read()
         all_words = content.split()
-        
-        fh.close()
 
     print(find_highest_score(all_words))
 
