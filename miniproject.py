@@ -32,12 +32,15 @@ def word_score(word):
 
     word = word.lower()
 
-    word_total = 0
-    for letter in word:
-        try:
-            word_total += letterPoints[letter]
-        except KeyError:
-            pass
+    # word_total = 0
+    # for letter in word:
+    #   try:
+    #       word_total += letterPoints[letter]
+    #   except KeyError:
+    #       pass
+    
+    word_total = sum((letterPoints[letter] if letter in list(letterPoints) else 0) for letter in word)
+        
 
     return word_total
     
