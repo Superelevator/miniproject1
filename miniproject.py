@@ -34,7 +34,10 @@ def word_score(word):
 
     word_total = 0
     for letter in word:
-        word_total += letterPoints[letter]
+        try:
+            word_total += letterPoints[letter]
+        except KeyError:
+            pass
 
     return word_total
     
