@@ -7,6 +7,7 @@
   2 Run the program
     
   3 Input text file name
+  
   You'll see a prompt like this:
   
   ```Enter a file name to find the highest scoring word: ```
