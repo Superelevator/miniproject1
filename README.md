@@ -20,7 +20,8 @@
 
   The code aggregates the scores of a word with the function
 
-  ```def word_score(word):
+  ```
+  def word_score(word):
     letterPoints = {
     "a":  1,
     "b":  3,
