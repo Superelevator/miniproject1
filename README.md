@@ -16,6 +16,8 @@
     
   **4 Be amazed**
 
+  # Function
+
   The code aggregates the scores of a word with the function
 
   ```def word_score(word):
@@ -83,6 +85,6 @@
   ```
   
 
-  Future tasks:
+  # Future tasks:
   
   1. Make a word leaderboard
