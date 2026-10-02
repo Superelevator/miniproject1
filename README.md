@@ -16,7 +16,7 @@
     
   **4 Be amazed**
 
-  # Function
+  # How it works
 
   The code aggregates the scores of a word with the function
 
